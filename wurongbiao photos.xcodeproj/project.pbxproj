@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29512760401B84919FB0C935 /* libPods-wurongbiao photos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE8A378A920FD9E528D1C97 /* libPods-wurongbiao photos.a */; };
+		CA2DAC822238D5D5003DDE3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2DAC812238D5D5003DDE3C /* AppDelegate.m */; };
+		CA2DAC882238D5D5003DDE3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DAC862238D5D5003DDE3C /* Main.storyboard */; };
+		CA2DAC8A2238D5D7003DDE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2DAC892238D5D7003DDE3C /* Assets.xcassets */; };
+		CA2DAC8D2238D5D7003DDE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DAC8B2238D5D7003DDE3C /* LaunchScreen.storyboard */; };
+		CA2DAC902238D5D7003DDE3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2DAC8F2238D5D7003DDE3C /* main.m */; };
+		CA8C64892238D97B00D43FA9 /* WUPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64802238D97A00D43FA9 /* WUPhotoListViewController.m */; };
+		CA8C648A2238D97B00D43FA9 /* WUPhotoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64812238D97A00D43FA9 /* WUPhotoListView.m */; };
+		CA8C648B2238D97B00D43FA9 /* WUPhotoListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64832238D97A00D43FA9 /* WUPhotoListViewModel.m */; };
+		CA8C648C2238D97B00D43FA9 /* WUPhotoListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64852238D97A00D43FA9 /* WUPhotoListPresenter.m */; };
+		CA8C648D2238D97B00D43FA9 /* WUPhotoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64862238D97A00D43FA9 /* WUPhotoListModel.m */; };
+		CA8C64982238DEF000D43FA9 /* WUHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64972238DEF000D43FA9 /* WUHttpClient.m */; };
+		CA8C649C2238F23900D43FA9 /* WUPhotoUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C649B2238F23900D43FA9 /* WUPhotoUrlModel.m */; };
+		CA8C649F2238F28C00D43FA9 /* WUUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C649E2238F28C00D43FA9 /* WUUserModel.m */; };
+		CA8C64A22238F77600D43FA9 /* WUPhotoListModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64A12238F77600D43FA9 /* WUPhotoListModelImpl.m */; };
+		CA8C64A72238F9AA00D43FA9 /* WUPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64A52238F9AA00D43FA9 /* WUPhotoListCell.m */; };
+		CA8C64A82238F9AA00D43FA9 /* WUPhotoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8C64A62238F9AA00D43FA9 /* WUPhotoListCell.xib */; };
+		CA8C64AE223A377D00D43FA9 /* WUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64AD223A377D00D43FA9 /* WUCache.m */; };
+		CA8C64B2223A56E300D43FA9 /* NSString+WU.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8C64B1223A56E300D43FA9 /* NSString+WU.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20A1D3A960737E7741D4B728 /* Pods-wurongbiao photos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wurongbiao photos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wurongbiao photos/Pods-wurongbiao photos.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2DAC7D2238D5D5003DDE3C /* wurongbiao photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wurongbiao photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2DAC802238D5D5003DDE3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA2DAC812238D5D5003DDE3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA2DAC872238D5D5003DDE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA2DAC892238D5D7003DDE3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2DAC8C2238D5D7003DDE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA2DAC8E2238D5D7003DDE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2DAC8F2238D5D7003DDE3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA8C647E2238D97900D43FA9 /* WUPhotoListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListView.h; sourceTree = "<group>"; };
+		CA8C647F2238D97900D43FA9 /* WUPhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListViewController.h; sourceTree = "<group>"; };
+		CA8C64802238D97A00D43FA9 /* WUPhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListViewController.m; sourceTree = "<group>"; };
+		CA8C64812238D97A00D43FA9 /* WUPhotoListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListView.m; sourceTree = "<group>"; };
+		CA8C64822238D97A00D43FA9 /* WUPhotoListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListModel.h; sourceTree = "<group>"; };
+		CA8C64832238D97A00D43FA9 /* WUPhotoListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListViewModel.m; sourceTree = "<group>"; };
+		CA8C64842238D97A00D43FA9 /* WUPhotoListInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListInterface.h; sourceTree = "<group>"; };
+		CA8C64852238D97A00D43FA9 /* WUPhotoListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListPresenter.m; sourceTree = "<group>"; };
+		CA8C64862238D97A00D43FA9 /* WUPhotoListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListModel.m; sourceTree = "<group>"; };
+		CA8C64872238D97A00D43FA9 /* WUPhotoListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListPresenter.h; sourceTree = "<group>"; };
+		CA8C64882238D97B00D43FA9 /* WUPhotoListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUPhotoListViewModel.h; sourceTree = "<group>"; };
+		CA8C64942238DB8900D43FA9 /* WUMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUMacros.h; sourceTree = "<group>"; };
+		CA8C64962238DEF000D43FA9 /* WUHttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUHttpClient.h; sourceTree = "<group>"; };
+		CA8C64972238DEF000D43FA9 /* WUHttpClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUHttpClient.m; sourceTree = "<group>"; };
+		CA8C649A2238F23900D43FA9 /* WUPhotoUrlModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUPhotoUrlModel.h; sourceTree = "<group>"; };
+		CA8C649B2238F23900D43FA9 /* WUPhotoUrlModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUPhotoUrlModel.m; sourceTree = "<group>"; };
+		CA8C649D2238F28C00D43FA9 /* WUUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUUserModel.h; sourceTree = "<group>"; };
+		CA8C649E2238F28C00D43FA9 /* WUUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUUserModel.m; sourceTree = "<group>"; };
+		CA8C64A02238F77600D43FA9 /* WUPhotoListModelImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUPhotoListModelImpl.h; sourceTree = "<group>"; };
+		CA8C64A12238F77600D43FA9 /* WUPhotoListModelImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListModelImpl.m; sourceTree = "<group>"; };
+		CA8C64A42238F9AA00D43FA9 /* WUPhotoListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUPhotoListCell.h; sourceTree = "<group>"; };
+		CA8C64A52238F9AA00D43FA9 /* WUPhotoListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUPhotoListCell.m; sourceTree = "<group>"; };
+		CA8C64A62238F9AA00D43FA9 /* WUPhotoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WUPhotoListCell.xib; sourceTree = "<group>"; };
+		CA8C64AC223A377D00D43FA9 /* WUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUCache.h; sourceTree = "<group>"; };
+		CA8C64AD223A377D00D43FA9 /* WUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUCache.m; sourceTree = "<group>"; };
+		CA8C64B0223A56E300D43FA9 /* NSString+WU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WU.h"; sourceTree = "<group>"; };
+		CA8C64B1223A56E300D43FA9 /* NSString+WU.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WU.m"; sourceTree = "<group>"; };
+		DBE8A378A920FD9E528D1C97 /* libPods-wurongbiao photos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wurongbiao photos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE423AA76EB2856397294808 /* Pods-wurongbiao photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wurongbiao photos.release.xcconfig"; path = "Pods/Target Support Files/Pods-wurongbiao photos/Pods-wurongbiao photos.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA2DAC7A2238D5D5003DDE3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29512760401B84919FB0C935 /* libPods-wurongbiao photos.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B69C48D6172EC798C052F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE8A378A920FD9E528D1C97 /* libPods-wurongbiao photos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABEFBED6A6B5576EECF90D96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20A1D3A960737E7741D4B728 /* Pods-wurongbiao photos.debug.xcconfig */,
+				DE423AA76EB2856397294808 /* Pods-wurongbiao photos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA2DAC742238D5D5003DDE3C = {
+			isa = PBXGroup;
+			children = (
+				CA2DAC7F2238D5D5003DDE3C /* wurongbiao photos */,
+				CA2DAC7E2238D5D5003DDE3C /* Products */,
+				ABEFBED6A6B5576EECF90D96 /* Pods */,
+				1B69C48D6172EC798C052F05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2DAC7E2238D5D5003DDE3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2DAC7D2238D5D5003DDE3C /* wurongbiao photos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2DAC7F2238D5D5003DDE3C /* wurongbiao photos */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64932238DB0A00D43FA9 /* GlobalUsage */,
+				CA8C647D2238D86200D43FA9 /* Resources */,
+				CA8C647C2238D83A00D43FA9 /* PhotoList */,
+				CA2DAC802238D5D5003DDE3C /* AppDelegate.h */,
+				CA2DAC812238D5D5003DDE3C /* AppDelegate.m */,
+				CA2DAC8E2238D5D7003DDE3C /* Info.plist */,
+				CA2DAC8F2238D5D7003DDE3C /* main.m */,
+			);
+			path = "wurongbiao photos";
+			sourceTree = "<group>";
+		};
+		CA8C647C2238D83A00D43FA9 /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C648E2238D9E300D43FA9 /* Model */,
+				CA8C648F2238D9F100D43FA9 /* View */,
+				CA8C64902238D9FB00D43FA9 /* Presenter */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		CA8C647D2238D86200D43FA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA2DAC862238D5D5003DDE3C /* Main.storyboard */,
+				CA2DAC892238D5D7003DDE3C /* Assets.xcassets */,
+				CA2DAC8B2238D5D7003DDE3C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA8C648E2238D9E300D43FA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64A02238F77600D43FA9 /* WUPhotoListModelImpl.h */,
+				CA8C64A12238F77600D43FA9 /* WUPhotoListModelImpl.m */,
+				CA8C64822238D97A00D43FA9 /* WUPhotoListModel.h */,
+				CA8C64862238D97A00D43FA9 /* WUPhotoListModel.m */,
+				CA8C649A2238F23900D43FA9 /* WUPhotoUrlModel.h */,
+				CA8C649B2238F23900D43FA9 /* WUPhotoUrlModel.m */,
+				CA8C649D2238F28C00D43FA9 /* WUUserModel.h */,
+				CA8C649E2238F28C00D43FA9 /* WUUserModel.m */,
+				CA8C64882238D97B00D43FA9 /* WUPhotoListViewModel.h */,
+				CA8C64832238D97A00D43FA9 /* WUPhotoListViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA8C648F2238D9F100D43FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64A32238F96500D43FA9 /* Cell */,
+				CA8C647E2238D97900D43FA9 /* WUPhotoListView.h */,
+				CA8C64812238D97A00D43FA9 /* WUPhotoListView.m */,
+				CA8C647F2238D97900D43FA9 /* WUPhotoListViewController.h */,
+				CA8C64802238D97A00D43FA9 /* WUPhotoListViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA8C64902238D9FB00D43FA9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64842238D97A00D43FA9 /* WUPhotoListInterface.h */,
+				CA8C64872238D97A00D43FA9 /* WUPhotoListPresenter.h */,
+				CA8C64852238D97A00D43FA9 /* WUPhotoListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CA8C64932238DB0A00D43FA9 /* GlobalUsage */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64AF223A56CE00D43FA9 /* Categories */,
+				CA8C64AB223A376B00D43FA9 /* Cache */,
+				CA8C64952238DEA900D43FA9 /* Network */,
+				CA8C64942238DB8900D43FA9 /* WUMacros.h */,
+			);
+			path = GlobalUsage;
+			sourceTree = "<group>";
+		};
+		CA8C64952238DEA900D43FA9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64962238DEF000D43FA9 /* WUHttpClient.h */,
+				CA8C64972238DEF000D43FA9 /* WUHttpClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8C64A32238F96500D43FA9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64A42238F9AA00D43FA9 /* WUPhotoListCell.h */,
+				CA8C64A52238F9AA00D43FA9 /* WUPhotoListCell.m */,
+				CA8C64A62238F9AA00D43FA9 /* WUPhotoListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CA8C64AB223A376B00D43FA9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64AC223A377D00D43FA9 /* WUCache.h */,
+				CA8C64AD223A377D00D43FA9 /* WUCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		CA8C64AF223A56CE00D43FA9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CA8C64B0223A56E300D43FA9 /* NSString+WU.h */,
+				CA8C64B1223A56E300D43FA9 /* NSString+WU.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA2DAC7C2238D5D5003DDE3C /* wurongbiao photos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2DAC932238D5D7003DDE3C /* Build configuration list for PBXNativeTarget "wurongbiao photos" */;
+			buildPhases = (
+				1CC37C6EE35303CB67F0F1B8 /* [CP] Check Pods Manifest.lock */,
+				CA2DAC792238D5D5003DDE3C /* Sources */,
+				CA2DAC7A2238D5D5003DDE3C /* Frameworks */,
+				CA2DAC7B2238D5D5003DDE3C /* Resources */,
+				026DD407B5C55D2F51E6F435 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wurongbiao photos";
+			productName = "wurongbiao photos";
+			productReference = CA2DAC7D2238D5D5003DDE3C /* wurongbiao photos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2DAC752238D5D5003DDE3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = WU;
+				TargetAttributes = {
+					CA2DAC7C2238D5D5003DDE3C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CA2DAC782238D5D5003DDE3C /* Build configuration list for PBXProject "wurongbiao photos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2DAC742238D5D5003DDE3C;
+			productRefGroup = CA2DAC7E2238D5D5003DDE3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA2DAC7C2238D5D5003DDE3C /* wurongbiao photos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA2DAC7B2238D5D5003DDE3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2DAC8D2238D5D7003DDE3C /* LaunchScreen.storyboard in Resources */,
+				CA2DAC8A2238D5D7003DDE3C /* Assets.xcassets in Resources */,
+				CA8C64A82238F9AA00D43FA9 /* WUPhotoListCell.xib in Resources */,
+				CA2DAC882238D5D5003DDE3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026DD407B5C55D2F51E6F435 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wurongbiao photos/Pods-wurongbiao photos-resources.sh",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPhotoBrowser.bundle",
+				"${PODS_ROOT}/IDMPhotoBrowser/Classes/IDMPBLocalizations.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IDMPBLocalizations.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wurongbiao photos/Pods-wurongbiao photos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CC37C6EE35303CB67F0F1B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wurongbiao photos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA2DAC792238D5D5003DDE3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8C648D2238D97B00D43FA9 /* WUPhotoListModel.m in Sources */,
+				CA8C648B2238D97B00D43FA9 /* WUPhotoListViewModel.m in Sources */,
+				CA8C64A72238F9AA00D43FA9 /* WUPhotoListCell.m in Sources */,
+				CA8C64B2223A56E300D43FA9 /* NSString+WU.m in Sources */,
+				CA8C648A2238D97B00D43FA9 /* WUPhotoListView.m in Sources */,
+				CA8C649C2238F23900D43FA9 /* WUPhotoUrlModel.m in Sources */,
+				CA8C649F2238F28C00D43FA9 /* WUUserModel.m in Sources */,
+				CA2DAC902238D5D7003DDE3C /* main.m in Sources */,
+				CA8C64A22238F77600D43FA9 /* WUPhotoListModelImpl.m in Sources */,
+				CA8C64AE223A377D00D43FA9 /* WUCache.m in Sources */,
+				CA8C64982238DEF000D43FA9 /* WUHttpClient.m in Sources */,
+				CA2DAC822238D5D5003DDE3C /* AppDelegate.m in Sources */,
+				CA8C648C2238D97B00D43FA9 /* WUPhotoListPresenter.m in Sources */,
+				CA8C64892238D97B00D43FA9 /* WUPhotoListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA2DAC862238D5D5003DDE3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA2DAC872238D5D5003DDE3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA2DAC8B2238D5D7003DDE3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA2DAC8C2238D5D7003DDE3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA2DAC912238D5D7003DDE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA2DAC922238D5D7003DDE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2DAC942238D5D7003DDE3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A1D3A960737E7741D4B728 /* Pods-wurongbiao photos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MHXBQKHVHU;
+				INFOPLIST_FILE = "wurongbiao photos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabe.wurongbiao.wurongbiao-photos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA2DAC952238D5D7003DDE3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE423AA76EB2856397294808 /* Pods-wurongbiao photos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MHXBQKHVHU;
+				INFOPLIST_FILE = "wurongbiao photos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabe.wurongbiao.wurongbiao-photos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA2DAC782238D5D5003DDE3C /* Build configuration list for PBXProject "wurongbiao photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2DAC912238D5D7003DDE3C /* Debug */,
+				CA2DAC922238D5D7003DDE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2DAC932238D5D7003DDE3C /* Build configuration list for PBXNativeTarget "wurongbiao photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2DAC942238D5D7003DDE3C /* Debug */,
+				CA2DAC952238D5D7003DDE3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2DAC752238D5D5003DDE3C /* Project object */;
+}
